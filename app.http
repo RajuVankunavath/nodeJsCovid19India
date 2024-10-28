@@ -1,0 +1,52 @@
+get http://localhost:3000/states/
+
+
+### 
+
+get http://localhost:3000/states/8/
+
+
+
+
+###
+
+post http://localhost:3000/districts/
+Content-Type:application/json 
+
+{
+    "districtName":"Hyderabad",
+    "stateId":3,
+    "cases":12345,
+    "cured":1234,
+    "active":321,
+    "deaths":90 
+}
+###
+get http://localhost:3000/districts/2/ 
+
+###
+delete http://localhost:3000/districts/2/
+
+
+###
+
+put http://localhost:3000/districts/3/ 
+Content-Type: application/json 
+
+{
+    "districtName" : "NLG",
+    "stateId":3,
+    "cases":6789,
+    "cured":1231,
+    "active":768687,
+    "deaths":90
+} 
+
+
+###
+get http://localhost:3000/states/2/stats/
+
+
+###
+
+get http://localhost:3000/district/3/details/
